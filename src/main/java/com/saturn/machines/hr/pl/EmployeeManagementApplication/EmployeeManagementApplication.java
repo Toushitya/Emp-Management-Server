@@ -22,7 +22,9 @@ public class EmployeeManagementApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 					.allowedMethods("*")
-					.allowedOrigins("http://localhost:3000");
+					.allowedOrigins("http://localhost:3000" ,
+							"https://saturnandsons-emp-management-app.vercel.app/"
+							);
 			}
 		};
 	}
